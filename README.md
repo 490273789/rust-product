@@ -42,8 +42,8 @@ cargo generate tyr-rust-bootcamp/template
 
 ### 安装 pre-commit
 
-pre-commit 是一个代码检查工具，可以在提交代码前进行代码检查。
-
+- pre-commit 是一个代码检查工具，可以在提交代码前进行代码检查。
+- 创建 .pre-commit-config.yaml 文件进行配置
 ```bash
 pipx install pre-commit
 ```
