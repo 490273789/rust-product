@@ -7,5 +7,9 @@ edition = "2021"
 
 [dependencies]
 
+[workspace.dependencies]
+anyhow = "1.0.94"
+
 [workspace]
-members=["csv_process"]
+resolver = "2"
+members = ["crates/csv_process"]

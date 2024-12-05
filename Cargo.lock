@@ -52,6 +52,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "anyhow"
+version = "1.0.94"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c1fd03a028ef38ba2276dce7e33fcd6369c158a1bca17946c4b1b701891c1ff7"
+
+[[package]]
 name = "clap"
 version = "4.5.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -122,9 +128,11 @@ dependencies = [
 name = "csv_process"
 version = "0.1.0"
 dependencies = [
+ "anyhow",
  "clap",
  "csv",
  "serde",
+ "serde_json",
 ]
 
 [[package]]
@@ -193,6 +201,18 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "serde_json"
+version = "1.0.133"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c7fceb2473b9166b2294ef05efcb65a3db80803f0b03ef86a5fc88a2b85ee377"
+dependencies = [
+ "itoa",
+ "memchr",
+ "ryu",
+ "serde",
 ]
 
 [[package]]
